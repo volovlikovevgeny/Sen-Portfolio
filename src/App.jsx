@@ -8,10 +8,13 @@ import Skills from './components/skills/skills.component';
 import Contacts from './components/contact/contact.component';
 import Footer from './components/footer/footer.component';
 
+import Particles from 'react-particles-js';
+
 import './App.css';
 
 const App = () => (
   <div>
+    <Particles className='particles' />
     <Navigation />
     <Home />
     <About />

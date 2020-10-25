@@ -77,7 +77,7 @@ class Navigation extends React.Component {
                             offset={70}
                             duration={700}
                             onClick={this.closeClick}
-                        >About</Link></li>
+                        >Contact</Link></li>
                     </ul>
                     <div className='menu-btn' onClick={this.toggleClick} >
                         {

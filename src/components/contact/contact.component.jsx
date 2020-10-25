@@ -1,15 +1,11 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+
 import './contact.styles.scss';
 
 
 
 class Contacts extends React.Component {
-
-
-
-
-
     sendEmail = (e) => {
         e.preventDefault();
 
@@ -21,8 +17,6 @@ class Contacts extends React.Component {
             });
         e.target.reset();
     }
-
-
 
     render() {
         return (
@@ -48,7 +42,7 @@ class Contacts extends React.Component {
                                     <i className="fas fa-map-marker-alt"></i>
                                     <div className='info'>
                                         <div className='head'>Address</div>
-                                        <div className='sub-title'>Rechnoy vokzal,19</div>
+                                        <div className='sub-title'>Rechnoy vokzal, 19</div>
                                     </div>
                                 </div>
 
