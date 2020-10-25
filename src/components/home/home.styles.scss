@@ -4,9 +4,19 @@
     color: #fff;
     min-height: 500px;
     font-family:'Ubuntu',sans-serif;
-    
+    position: relative;
 
+    .video{
+   
+        position: absolute;
+        
+        z-index: -9999;
+        height: 90%;
+        width: 100%;
+
+    }
     .home-content{
+
 
         .text-1{
             font-size: 27px;
@@ -72,22 +82,17 @@
             padding: 0 23px;
 
             .home-content{
-              .text-1{
-                text-align: center;
-            }
+            
               .text-2{
                   font-size: 60px;
-                  text-align: center;
+                 
               }
               .text-3{
                   font-size: 32px;
-                  text-align: center;
+                
               }
               a{
                 font-size: 20px;
-              
-                display: flex;
-                justify-content: center;
             }
           }
         }

@@ -8,26 +8,26 @@ import Skills from './components/skills/skills.component';
 import Contacts from './components/contact/contact.component';
 import Footer from './components/footer/footer.component';
 
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 
 import './App.css';
 
-const particleOptions = {
-  particles: {
-    number: {
-      value: 15,
-      density: {
-        enable: true,
-        value_area: 1000
-      }
-    }
-  }
-}
+// const particleOptions = {
+//   particles: {
+//     number: {
+//       value: 15,
+//       density: {
+//         enable: true,
+//         value_area: 1000
+//       }
+//     }
+//   }
+// }
 
 const App = () => (
   <div>
-    <Particles
-      params={particleOptions} className='particles' />
+    {/* <Particles
+      params={particleOptions} className='particles' /> */}
     <Navigation />
     <Home />
     <About />
