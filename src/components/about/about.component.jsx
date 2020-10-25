@@ -3,7 +3,7 @@ import './about.styles.scss';
 
 export default function About() {
     return (
-        <section className='about'>
+        <section className='about' id='about'>
             <div className='container'>
                 <h2 className='title'>About me</h2>
                 <div className='about-content'>
@@ -12,7 +12,9 @@ export default function About() {
                     </div>
                     <div className='column right'>
                         <div className='text'>I`m Jenya and I`m <span>Web Developer</span></div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium eveniet labore pariatur natus, ipsam tempore velit! Neque, error pariatur? Exercitationem quisquam et, voluptatum aliquid distinctio alias, saepe nam assumenda libero consequatur a. Consequuntur voluptates sed provident et dolorem cumque magnam totam blanditiis fugit quae natus, reiciendis minima nihil. Illo voluptatum aperiam ut fuga dicta aspernatur accusamus facere hic ducimus ullam.</p>
+                        <p>I am a Web Developer with enthusiasm and focus on Frontend Development and Scripting. I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally in the IT field.
+
+                            Feel free to contact me or email at any time</p>
                         <a href="#">Download CV</a>
                     </div>
                 </div>

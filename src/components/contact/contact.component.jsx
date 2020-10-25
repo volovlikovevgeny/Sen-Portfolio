@@ -1,9 +1,11 @@
 import React from 'react';
-import './contact.styles.scss'
+import './contact.styles.scss';
+
+
 
 export default function Contacts() {
     return (
-        <section className='contact'>
+        <section className='contact' id='contacts'>
             <div className='container'>
                 <h2 className='title'>Contact me</h2>
                 <div className='contact-content'>
@@ -13,13 +15,13 @@ export default function Contacts() {
 
                         <div className='icons'>
 
-                            <div className='row'>
+                            <a className='row'>
                                 <i className='fas fa-user'></i>
                                 <div className='info'>
                                     <div className='head'>Name</div>
                                     <div className='sub-title'>Volovlikov Evgeny</div>
                                 </div>
-                            </div>
+                            </a>
 
                             <div className='row'>
                                 <i className="fas fa-map-marker-alt"></i>

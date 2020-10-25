@@ -81,14 +81,18 @@
                     }
                 }
                    .html::before{
-                       width: 90%;
+                       width: 95%;
                    }
                    .css::before{
-                       width: 85%;
+                       width: 92%;
                    }
                    .js::before{
-                       width: 67%;
+                       width: 90%;
                    }
+
+                   .react::before{
+                    width: 88%;
+                }
             }
         }
 

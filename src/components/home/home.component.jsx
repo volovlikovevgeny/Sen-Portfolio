@@ -3,7 +3,7 @@ import React from 'react';
 import './home.styles.scss';
 
 const Home = () => (
-    <section className='home'>
+    <section className='home' id='home'>
         <div className='container'>
             <div className='home-content'>
                 <div className='text-1'>Hello my name is </div>

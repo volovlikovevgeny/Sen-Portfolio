@@ -1,6 +1,7 @@
 import React from 'react';
-
 import './navigation.styles.scss';
+
+import { Link } from 'react-scroll';
 
 class Navigation extends React.Component {
 
@@ -12,30 +13,71 @@ class Navigation extends React.Component {
         }
     }
 
-
-
-
     toggleClick = () => {
         this.setState({
             isHidden: !this.state.isHidden
         })
     }
 
+    closeClick = () => {
+        this.setState({
+            isHidden: !this.state.isHidden
+        })
+    }
 
     render() {
         const { isHidden } = this.state;
-        console.log(isHidden);
         return (
             <nav className='navbar'>
                 <div className='navbar-items container'>
-                    <div className='logo'><a href="#">Portfo<span>lio</span></a></div>
+                    <div className='logo'><a href="/home">Portfo<span>lio</span></a></div>
                     <ul className='menu' style={isHidden ? null : { left: '0' }}>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><Link
+                            activeClass='active'
+                            to='home'
+                            spy={true}
+                            smooth={true}
+                            offset={70}
+                            duration={700}
+                            onClick={this.closeClick}
+                        >Home</Link></li>
+                        <li><Link
+                            activeClass='active'
+                            to='about'
+                            spy={true}
+                            smooth={true}
+                            offset={70}
+                            duration={700}
+                            onClick={this.closeClick}
+                        >About</Link></li>
+                        <li><Link
+                            activeClass='active'
+                            to='services'
+                            spy={true}
+                            smooth={true}
+                            offset={70}
+                            duration={700}
+                            onClick={this.closeClick}
+                        >Projects</Link></li>
+                        <li><Link
+                            activeClass='active'
+                            to='skills'
+                            spy={true}
+                            smooth={true}
+                            offset={70}
+                            duration={700}
+                            onClick={this.closeClick}
+                        >Skills</Link></li>
+
+                        <li><Link
+                            activeClass='active'
+                            to='contacts'
+                            spy={true}
+                            smooth={true}
+                            offset={70}
+                            duration={700}
+                            onClick={this.closeClick}
+                        >About</Link></li>
                     </ul>
                     <div className='menu-btn' onClick={this.toggleClick} >
                         {
