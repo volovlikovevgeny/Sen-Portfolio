@@ -3,8 +3,6 @@ import emailjs from 'emailjs-com';
 
 import './contact.styles.scss';
 
-
-
 class Contacts extends React.Component {
     sendEmail = (e) => {
         e.preventDefault();
