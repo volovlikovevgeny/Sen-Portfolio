@@ -12,9 +12,22 @@ import Particles from 'react-particles-js';
 
 import './App.css';
 
+const particleOptions = {
+  particles: {
+    number: {
+      value: 15,
+      density: {
+        enable: true,
+        value_area: 1000
+      }
+    }
+  }
+}
+
 const App = () => (
   <div>
-    <Particles className='particles' />
+    <Particles
+      params={particleOptions} className='particles' />
     <Navigation />
     <Home />
     <About />
