@@ -33,6 +33,15 @@ export default function Services() {
                             <img src="https://i.ibb.co/0qnhtsp/img-3.png" alt="" />
                         </div>
                     </div>
+                    <div className='card'>
+                        <div className='box'>
+                            <i className='fas fa-code'></i>
+                            <div className='text'>Web Developing</div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam deserunt pariatur ipsa aut, dicta nostrum.</p>
+                            <img src="https://i.ibb.co/R9RPvvL/img-2.png" alt="" />
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
