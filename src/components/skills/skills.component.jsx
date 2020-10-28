@@ -1,55 +1,61 @@
 import React from 'react';
 import './skills.styles.scss';
 
-export default function Skills() {
-    return (
-        <section className='skills' id='skills'>
-            <div className='container'>
-                <h2 className='title'>My Skills</h2>
-                <div className='skills-content'>
-                    <div className='column left'>
-                        <div className='text'>My creative skills and  experience</div>
-                        <p>Excellent knowledge of English, knowledge of Chinese at a high level.
-                        Higher education of a translator (IV grade).
-                        The desire to speak and work with people, an active life position, There are personal projects. Experience in problem solving and finding effective solutions.</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <div className='column right'>
-                        <div className='bars'>
-                            <div className='info'>
-                                <span>HTML</span>
-                                <span>95%</span>
-                            </div>
-                            <div className='line html'></div>
-                        </div>
+class Skills extends React.Component {
+    constructor() {
+        super()
 
-                        <div className='bars'>
-                            <div className='info'>
-                                <span>CSS</span>
-                                <span>92%</span>
-                            </div>
-                            <div className='line css'></div>
-                        </div>
+        this.state = {
+            skills: [
+                {
+                    skill: 'HTML',
+                    procent: '95%',
+                },
+                {
+                    skill: 'CSS',
+                    procent: '92%',
+                },
 
-                        <div className='bars'>
-                            <div className='info'>
-                                <span>JS</span>
-                                <span>90%</span>
-                            </div>
-                            <div className='line js'></div>
-                        </div>
+                {
+                    skill: 'JS',
+                    procent: '90%',
+                },
+                {
+                    skill: 'REACT',
+                    procent: '88%',
+                },
+            ]
+        }
+    }
 
-                        <div className='bars'>
-                            <div className='info'>
-                                <span>React</span>
-                                <span>88%</span>
-                            </div>
-                            <div className='line js'></div>
+    render() {
+        return (
+            <section className='skills' id='skills'>
+                <div className='container'>
+                    <h2 className='title'>My Skills</h2>
+                    <div className='skills-content'>
+                        <div className='column left'>
+                            <div className='text'>My creative skills and  experience</div>
+                            <p>Excellent knowledge of English, knowledge of Chinese at a high level.
+                            Higher education of a translator (IV grade).
+                            The desire to speak and work with people, an active life position, There are personal projects. Experience in problem solving and finding effective solutions.</p>
                         </div>
-
+                        <div className='column right'>
+                            {this.state.skills.map((skill) => (
+                                <div className='bars'>
+                                    <div className='info'>
+                                        <span>{skill.skill}</span>
+                                        <span>{skill.procent}</span>
+                                    </div>
+                                    <div className='line html'></div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    )
+            </section>
+        )
+    }
 }
+
+export default Skills;

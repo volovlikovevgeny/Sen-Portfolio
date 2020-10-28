@@ -7,7 +7,7 @@ const Home = lazy(() => import('./components/home/home.component'));
 
 const Navigation = lazy(() => import('./components/navigation/navigation.component'));
 
-const About = lazy(() => import('./components/navigation/navigation.component'));
+const About = lazy(() => import('./components/about/about.component'));
 const Services = lazy(() => import('./components/services/services.component'));
 const Skills = lazy(() => import('./components/skills/skills.component'));
 const Contacts = lazy(() => import('./components/contact/contact.component'));
