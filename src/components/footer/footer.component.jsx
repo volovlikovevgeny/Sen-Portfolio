@@ -11,7 +11,9 @@ export default function Footer() {
                 spy={true}
                 smooth={true}
                 offset={70}
-                duration={700} >Jenya</Link> | <span className='far fa-copyright'></span>2020 All rights reserved. </span>
+                duration={700}
+                style={{ cursor: 'pointer' }}
+            >Jenya</Link> | <span className='far fa-copyright'></span>2020 All rights reserved. </span>
         </footer>
     )
 }
