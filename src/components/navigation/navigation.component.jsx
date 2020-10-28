@@ -30,7 +30,7 @@ class Navigation extends React.Component {
         return (
             <nav className='navbar'>
                 <div className='navbar-items container'>
-                    <div className='logo'><a href="/home">Portfo<span>lio</span></a></div>
+                    <div className='logo'><Link to='home'>Portfo<span>lio</span></Link></div>
                     <ul className='menu' style={isHidden ? null : { left: '0' }}>
                         <li>
                             <Link activeClass='active'

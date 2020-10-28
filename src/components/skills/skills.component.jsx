@@ -8,21 +8,35 @@ class Skills extends React.Component {
         this.state = {
             skills: [
                 {
+                    id: 1,
                     skill: 'HTML',
                     procent: '95%',
+                    className: 'html'
                 },
                 {
+                    id: 2,
                     skill: 'CSS',
                     procent: '92%',
+                    className: 'css'
                 },
 
                 {
+                    id: 3,
                     skill: 'JS',
                     procent: '90%',
+                    className: 'js'
                 },
                 {
+                    id: 4,
                     skill: 'REACT',
                     procent: '88%',
+                    className: 'react'
+                },
+                {
+                    id: 5,
+                    skill: 'REDUX/RESELECT',
+                    procent: '85%',
+                    className: 'redux'
                 },
             ]
         }
@@ -42,18 +56,18 @@ class Skills extends React.Component {
                         </div>
                         <div className='column right'>
                             {this.state.skills.map((skill) => (
-                                <div className='bars'>
+                                <div className='bars' key={skill.id} >
                                     <div className='info'>
                                         <span>{skill.skill}</span>
                                         <span>{skill.procent}</span>
                                     </div>
-                                    <div className='line html'></div>
+                                    <div className={`line ${skill.className}`}   ></div>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
         )
     }
 }

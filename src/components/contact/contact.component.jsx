@@ -4,6 +4,32 @@ import emailjs from 'emailjs-com';
 import './contact.styles.scss';
 
 class Contacts extends React.Component {
+
+
+    constructor() {
+        super()
+
+        this.state = {
+            contacts: [
+                {
+                    id: 1,
+                    head: 'Name',
+                    subTitle: 'Volovlikov Evgeny',
+                },
+                {
+                    id: 2,
+                    head: 'Address',
+                    subTitle: 'Prospect Lenina, 7',
+                },
+                {
+                    id: 3,
+                    head: 'Mail',
+                    subTitle: 'Volovlikov97@gmail.com',
+                }
+            ]
+        }
+    }
+
     sendEmail = (e) => {
         e.preventDefault();
 
@@ -24,33 +50,20 @@ class Contacts extends React.Component {
                     <div className='contact-content'>
                         <div className='column left'>
                             <div className='text'>Get in Touch</div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque sit provident rerum laboriosam asperiores consequuntur tempore nesciunt necessitatibus deserunt!</p>
+                            <p>If you have any questions or projects that you weant to discuss. Feel free to write me on any time.</p>
 
                             <div className='icons'>
-
-                                <a className='row'>
-                                    <i className='fas fa-user'></i>
-                                    <div className='info'>
-                                        <div className='head'>Name</div>
-                                        <div className='sub-title'>Volovlikov Evgeny</div>
-                                    </div>
-                                </a>
-
-                                <div className='row'>
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    <div className='info'>
-                                        <div className='head'>Address</div>
-                                        <div className='sub-title'>Rechnoy vokzal, 19</div>
-                                    </div>
-                                </div>
-
-                                <div className='row'>
-                                    <i className="fas fa-envelope"></i>
-                                    <div className='info'>
-                                        <div className='head'>Email</div>
-                                        <div className='sub-title'>Volovlikov97@gmail.com</div>
-                                    </div>
-                                </div>
+                                {
+                                    this.state.contacts.map(item => (
+                                        <a className='row' key={item.id} >
+                                            <i className='fas fa-user'></i>
+                                            <div className='info'>
+                                                <div className='head'>{item.head}</div>
+                                                <div className='sub-title'>{item.subTitle}</div>
+                                            </div>
+                                        </a>
+                                    ))
+                                }
                             </div>
                         </div>
                         <div className='column right'>
