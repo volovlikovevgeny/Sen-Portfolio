@@ -2,15 +2,15 @@
     position: fixed;
     width: 42px;
     height: 45px;
-    border: 1px solid #fff;
+ 
     color: #fff;
-    background-color: blue;
+   
     right: 30px;
     bottom: 10px;
     text-align: center;
     z-index:999;
     font-size: 30px;
-    // opacity: 0;
+    
     cursor: pointer;
     border-radius: 6px;
     transition: all .3s ease;
@@ -20,7 +20,7 @@
 
     .show{
         opacity: 1;
-        pointer-events: auto;
+        // pointer-events: auto;
     }
 
     @media(max-width:800px){
