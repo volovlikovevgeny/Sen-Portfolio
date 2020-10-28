@@ -15,7 +15,7 @@ export default function About() {
                         <p>I am a Web Developer with enthusiasm and focus on Frontend Development and Scripting. I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally in the IT field.
 
                             Feel free to contact me or email at any time</p>
-                        <a href="#">Download CV</a>
+                        <button>Download CV</button>
                     </div>
                 </div>
             </div>

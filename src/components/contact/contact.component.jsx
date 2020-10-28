@@ -1,34 +1,11 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 
+import { connect } from 'react-redux';
+
 import './contact.styles.scss';
 
 class Contacts extends React.Component {
-
-
-    constructor() {
-        super()
-
-        this.state = {
-            contacts: [
-                {
-                    id: 1,
-                    head: 'Name',
-                    subTitle: 'Volovlikov Evgeny',
-                },
-                {
-                    id: 2,
-                    head: 'Address',
-                    subTitle: 'Prospect Lenina, 7',
-                },
-                {
-                    id: 3,
-                    head: 'Mail',
-                    subTitle: 'Volovlikov97@gmail.com',
-                }
-            ]
-        }
-    }
 
     sendEmail = (e) => {
         e.preventDefault();
@@ -43,6 +20,9 @@ class Contacts extends React.Component {
     }
 
     render() {
+
+        const { contactFromProps, } = this.props;
+
         return (
             <section className='contact' id='contacts'>
                 <div className='container'>
@@ -54,7 +34,7 @@ class Contacts extends React.Component {
 
                             <div className='icons'>
                                 {
-                                    this.state.contacts.map(item => (
+                                    contactFromProps.map(item => (
                                         <a className='row' key={item.id} >
                                             <i className='fas fa-user'></i>
                                             <div className='info'>
@@ -95,4 +75,9 @@ class Contacts extends React.Component {
     }
 }
 
-export default Contacts;
+
+const mapStateToProps = (state) => ({
+    contactFromProps: state.contact.contacts
+})
+
+export default connect(mapStateToProps,)(Contacts);
