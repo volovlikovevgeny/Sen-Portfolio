@@ -1,17 +1,22 @@
-import React from 'react';
-
-import Navigation from './components/navigation/navigation.component';
-import Home from './components/home/home.component';
-import About from './components/about/about.component';
-import Services from './components/services/services.component';
-import Skills from './components/skills/skills.component';
-import Contacts from './components/contact/contact.component';
-import Footer from './components/footer/footer.component';
-import ScrollBtn from './components/scroll-up-btn/scroll-up-btn';
-
-import Particles from 'react-particles-js';
+import React, { lazy, Suspense } from 'react';
 
 import './App.css';
+
+
+const Home = lazy(() => import('./components/home/home.component'));
+
+const Navigation = lazy(() => import('./components/navigation/navigation.component'));
+
+const About = lazy(() => import('./components/navigation/navigation.component'));
+const Services = lazy(() => import('./components/services/services.component'));
+const Skills = lazy(() => import('./components/skills/skills.component'));
+const Contacts = lazy(() => import('./components/contact/contact.component'));
+const Footer = lazy(() => import('./components/footer/footer.component'));
+const ScrollBtn = lazy(() => import('./components/scroll-up-btn/scroll-up-btn'));
+
+const Particles = lazy(() => import('react-particles-js'));
+
+
 
 const particleOptions = {
   particles: {
@@ -27,16 +32,18 @@ const particleOptions = {
 
 const App = () => (
   <div>
-    <Particles
-      params={particleOptions} className='particles' />
-    <Navigation />
-    <Home />
-    <About />
-    <Services />
-    <Skills />
-    <Contacts />
-    <Footer />
-    <ScrollBtn />
+    <Suspense fallback={<div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '2rem' }}>Loading</div>}>
+      <Particles
+        params={particleOptions} className='particles' />
+      <Navigation />
+      <Home />
+      <About />
+      <Services />
+      <Skills />
+      <Contacts />
+      <Footer />
+      <ScrollBtn />
+    </Suspense>
   </div>
 )
 
