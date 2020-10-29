@@ -1,8 +1,8 @@
 import React from 'react';
-import './services.styles.scss';
+import './projects.styles.scss';
 
 
-class Services extends React.Component {
+class Projects extends React.Component {
 
     constructor() {
         super()
@@ -45,7 +45,7 @@ class Services extends React.Component {
 
     render() {
         return (
-            <section className='services' id='services'>
+            <section className='projects' id='projects'>
                 <div className='container'>
                     <h2 className='title'>Projects</h2>
                     <div className='serv-content'>
@@ -71,4 +71,4 @@ class Services extends React.Component {
     }
 }
 
-export default Services;
+export default Projects;

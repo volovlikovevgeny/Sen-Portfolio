@@ -15,7 +15,7 @@ class Skills extends React.Component {
                 },
                 {
                     id: 2,
-                    skill: 'CSS',
+                    skill: 'CSS/SASS',
                     procent: '92%',
                     className: 'css'
                 },

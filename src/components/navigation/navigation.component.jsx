@@ -10,6 +10,33 @@ class Navigation extends React.Component {
 
         this.state = {
             isHidden: true,
+            navLinks: [
+                {
+                    id: 1,
+                    link: 'home',
+                    name: 'Home'
+                },
+                {
+                    id: 1,
+                    link: 'about',
+                    name: 'About'
+                },
+                {
+                    id: 1,
+                    link: 'projects',
+                    name: 'Projects'
+                },
+                {
+                    id: 1,
+                    link: 'skills',
+                    name: 'Skills'
+                },
+                {
+                    id: 1,
+                    link: 'contact',
+                    name: 'Contact'
+                },
+            ]
         }
     }
 
@@ -30,59 +57,24 @@ class Navigation extends React.Component {
         return (
             <nav className='navbar'>
                 <div className='navbar-items container'>
-                    <div className='logo'><Link to='home'>Portfo<span>lio</span></Link></div>
+                    <div className='logo'><Link
+                        to='home'
+                        smooth={true}
+                        offset={70}
+                        duration={700}>Portfo<span>lio</span></Link></div>
                     <ul className='menu' style={isHidden ? null : { left: '0' }}>
-                        <li>
-                            <Link activeClass='active'
-                                to={'home'}
-                                spy={true}
-                                smooth={true}
-                                offset={70}
-                                duration={700}
-                                onClick={this.closeClick}>Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link activeClass='active'
-                                to={'about'}
-                                spy={true}
-                                smooth={true}
-                                offset={70}
-                                duration={700}
-                                onClick={this.closeClick}>About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link activeClass='active'
-                                to={'services'}
-                                spy={true}
-                                smooth={true}
-                                offset={70}
-                                duration={700}
-                                onClick={this.closeClick}>Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link activeClass='active'
-                                to={'skills'}
-                                spy={true}
-                                smooth={true}
-                                offset={70}
-                                duration={700}
-                                onClick={this.closeClick}>Skills
-                            </Link>
-                        </li>
-                        <li>
-                            <Link activeClass='active'
-                                to={'contact'}
-                                spy={true}
-                                smooth={true}
-                                offset={70}
-                                duration={700}
-                                onClick={this.closeClick}>Contact
-                            </Link>
-                        </li>
-                        )
+                        {this.state.navLinks.map(item => (
+                            <li>
+                                <Link activeClass='active'
+                                    to={item.link}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={70}
+                                    duration={700}
+                                    onClick={this.closeClick}>{item.name}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                     <div className='menu-btn' onClick={this.toggleClick} >
                         {

@@ -1,6 +1,8 @@
 import React from 'react';
 import './about.styles.scss';
 
+import pdf from '../../assets/Volovlikov Evgeny.pdf';
+
 export default function About() {
     return (
         <section className='about' id='about'>
@@ -13,9 +15,8 @@ export default function About() {
                     <div className='column right'>
                         <div className='text'>I`m Jenya and I`m <span>Web Developer</span></div>
                         <p>I am a Web Developer with enthusiasm and focus on Frontend Development and Scripting. I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally in the IT field.
-
                             Feel free to contact me or email at any time</p>
-                        <button>Download CV</button>
+                        <a className='download-button' href={pdf}>Download CV</a>
                     </div>
                 </div>
             </div>

@@ -6,12 +6,18 @@
         font-family:'Ubuntu',sans-serif;
         background-color: black;
 
+
+
        
 
      .navbar-items{
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .logo{
+          cursor: pointer;
+        }
  
 
         .menu-btn{
@@ -71,7 +77,7 @@
               right: 0;
               top: 0;
               bottom: 0;
-              background-color: #111;
+              background-color: #000;
               text-align: center;
               padding-top:80px;
               transition: all .3s ease;
