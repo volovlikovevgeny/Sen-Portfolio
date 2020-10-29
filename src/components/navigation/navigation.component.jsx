@@ -66,7 +66,6 @@ class Navigation extends React.Component {
                         {this.state.navLinks.map(item => (
                             <li key={item.id}>
                                 <Link
-
                                     activeClass='active'
                                     to={item.link}
                                     spy={true}

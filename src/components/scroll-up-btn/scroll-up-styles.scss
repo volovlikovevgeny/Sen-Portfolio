@@ -6,7 +6,7 @@
     color: #fff;
    
     right: 30px;
-    bottom: 10px;
+    bottom: 30px;
     text-align: center;
     z-index:999;
     font-size: 30px;
@@ -24,7 +24,7 @@
     }
 
     @media(max-width:800px){
-        bottom: 30px;
+        display: none;
     }
 }
 
