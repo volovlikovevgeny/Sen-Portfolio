@@ -17,22 +17,22 @@ class Navigation extends React.Component {
                     name: 'Home'
                 },
                 {
-                    id: 1,
+                    id: 2,
                     link: 'about',
                     name: 'About'
                 },
                 {
-                    id: 1,
+                    id: 3,
                     link: 'projects',
                     name: 'Projects'
                 },
                 {
-                    id: 1,
+                    id: 4,
                     link: 'skills',
                     name: 'Skills'
                 },
                 {
-                    id: 1,
+                    id: 5,
                     link: 'contact',
                     name: 'Contact'
                 },
@@ -64,8 +64,10 @@ class Navigation extends React.Component {
                         duration={700}>Portfo<span>lio</span></Link></div>
                     <ul className='menu' style={isHidden ? null : { left: '0' }}>
                         {this.state.navLinks.map(item => (
-                            <li>
-                                <Link activeClass='active'
+                            <li key={item.id}>
+                                <Link
+
+                                    activeClass='active'
                                     to={item.link}
                                     spy={true}
                                     smooth={true}

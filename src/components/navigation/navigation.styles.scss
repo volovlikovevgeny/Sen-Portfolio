@@ -66,7 +66,7 @@
           
              .navbar-items .menu-btn{
               display: block;
-              z-index: 999;
+              z-index: 111111;
             }
           
              .menu{
@@ -81,6 +81,7 @@
               text-align: center;
               padding-top:80px;
               transition: all .3s ease;
+              z-index: 10000;
             }
           
             
