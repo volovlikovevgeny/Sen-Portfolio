@@ -13,7 +13,7 @@ class Projects extends React.Component {
                     id: 1,
                     dev: 'Frontend Developing',
                     text: 'Frontend application in order to create I`ve used React and Sass thinking about optimizing, adding Backend',
-                    url: 'https://portsenfol-live.herokuapp.com/',
+                    url: 'https://volovlikovevgeny.github.io/Sen-Portfolio/',
                     img: 'https://i.ibb.co/k8Sw1KL/img-1.png'
                 },
                 {
@@ -28,14 +28,14 @@ class Projects extends React.Component {
                     id: 3,
                     dev: 'Frontend Developing',
                     text: 'Frontend application in order to create I`ve used React and Sass thinking about optimizing, adding Backend',
-                    url: 'https://portsenfol-live.herokuapp.com/',
+                    url: 'https://volovlikovevgeny.github.io/Sen-Portfolio/',
                     img: 'https://i.ibb.co/k8Sw1KL/img-1.png'
                 },
                 {
                     id: 4,
                     dev: 'Full-stack Developing',
                     text: 'E-commerce website that was made with React, react-router, redux, reselect, sass, firebase, stripe api, hooks, styled-components.',
-                    url: 'https://drgn-live.herokuapp.com/',
+                    url: 'https://drgn.netlify.app/',
                     img: 'https://i.ibb.co/R9RPvvL/img-2.png',
 
                 },
