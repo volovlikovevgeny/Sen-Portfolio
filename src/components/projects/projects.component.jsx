@@ -18,26 +18,18 @@ class Projects extends React.Component {
                 },
                 {
                     id: 2,
-                    dev: 'Full-stack Developing',
+                    dev: 'Full-stack',
                     text: 'E-commerce website that was made with React, react-router, redux, reselect, sass, firebase, stripe api, hooks, styled-components.',
-                    url: 'https://drgn-live.herokuapp.com/',
+                    url: 'https://drgn.netlify.app/',
                     img: 'https://i.ibb.co/R9RPvvL/img-2.png',
 
                 },
                 {
                     id: 3,
-                    dev: 'Frontend Developing',
-                    text: 'Frontend application in order to create I`ve used React and Sass thinking about optimizing, adding Backend',
-                    url: 'https://volovlikovevgeny.github.io/Sen-Portfolio/',
-                    img: 'https://i.ibb.co/k8Sw1KL/img-1.png'
-                },
-                {
-                    id: 4,
-                    dev: 'Full-stack Developing',
-                    text: 'E-commerce website that was made with React, react-router, redux, reselect, sass, firebase, stripe api, hooks, styled-components.',
-                    url: 'https://drgn.netlify.app/',
-                    img: 'https://i.ibb.co/R9RPvvL/img-2.png',
-
+                    dev: 'Full-Stack',
+                    text: 'Frontend application in order to create I`ve used React and firebase, also thanks to the intellegance of api to create application',
+                    url: 'https://sbmr.netlify.app/',
+                    img: 'https://i.ibb.co/HtjPr6s/37.png'
                 },
             ]
         }
