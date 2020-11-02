@@ -38,6 +38,12 @@ class Skills extends React.Component {
                     procent: '85%',
                     className: 'redux'
                 },
+                {
+                    id: 5,
+                    skill: 'NODE/EXPRESS',
+                    procent: '73%',
+                    className: 'node'
+                },
             ]
         }
     }

@@ -39,9 +39,10 @@
 
             .box{
                 transition: all .3s ease;
+                position: relative;
 
                 img{
-                    width: 100%;
+                    width: 90%;
                 }
 
                 &:hover{
@@ -51,6 +52,31 @@
                 p{
                     text-align: justify;
                     margin-bottom: 5px;
+                }
+            }
+
+            .box-btn{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                a{
+                    height: auto;
+                    width: 25%;
+                    display: inline-block;
+                    background-color: #000;
+                    color: #fff;
+                    font-size: 13px;
+                    padding: 5px;
+                    border-radius: 6px;
+                    transition: all .3s ease; 
+
+                    &:hover{
+                        background-color: #fff;
+                        color: #000;
+                    }
                 }
             }
         }
