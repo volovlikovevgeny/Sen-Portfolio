@@ -37,6 +37,15 @@ class Projects extends React.Component {
                     code: 'https://github.com/volovlikovevgeny/SmartBrain-Front-Firebase',
                     live: 'https://sbmr.netlify.app/'
                 },
+                {
+                    id: 4,
+                    dev: 'Frontend Developing',
+                    text: 'Frontend application made with HTML5 CSS3 Vanilla JS. On developing stage',
+                    url: 'https://volovlikovevgeny.github.io/RestShop/',
+                    img: 'https://i.ibb.co/zVxSqZ6/rest.png',
+                    code: 'https://github.com/volovlikovevgeny/RestShop',
+                    live: 'https://volovlikovevgeny.github.io/RestShop/'
+                },
             ]
         }
     }
