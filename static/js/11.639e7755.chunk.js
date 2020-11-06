@@ -1,2 +1,0 @@
-(this.webpackJsonpportfoli=this.webpackJsonpportfoli||[]).push([[11],{63:function(t,e,a){},71:function(t,e,a){"use strict";a.r(e),a.d(e,"default",(function(){return c}));var n=a(0),s=a.n(n),o=(a(63),a(37));function c(){return s.a.createElement(o.Link,{className:"scroll-up-btn",activeClass:"active",to:"home",spy:!0,smooth:!0,offset:70,duration:700},s.a.createElement("i",{className:"fas fa-angle-up"}))}}}]);
-//# sourceMappingURL=11.639e7755.chunk.js.map
