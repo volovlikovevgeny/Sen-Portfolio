@@ -5,7 +5,7 @@ import pdf from '../../assets/Volovlikov Evgeny.pdf';
 
 export default function About() {
     return (
-        <section className='about' id='about'>
+        <section className='about' id='about' data-aos="zoom-in-up" data-aos-duration="1000">
             <div className='container'>
                 <h2 className='title'>About me</h2>
                 <div className='about-content'>

@@ -39,10 +39,22 @@ class Skills extends React.Component {
                     className: 'redux'
                 },
                 {
-                    id: 5,
+                    id: 6,
                     skill: 'NODE/EXPRESS',
-                    procent: '73%',
+                    procent: '77%',
                     className: 'node'
+                },
+                {
+                    id: 6,
+                    skill: 'POSTGRES/SQL',
+                    procent: '70%',
+                    className: 'postgres'
+                },
+                {
+                    id: 7,
+                    skill: 'GIT',
+                    procent: '93%',
+                    className: 'git'
                 },
             ]
         }
@@ -50,7 +62,7 @@ class Skills extends React.Component {
 
     render() {
         return (
-            <section className='skills' id='skills'>
+            <section data-aos="zoom-in" data-aos-duration="1000" className='skills' id='skills'>
                 <div className='container'>
                     <h2 className='title'>My Skills</h2>
                     <div className='skills-content'>

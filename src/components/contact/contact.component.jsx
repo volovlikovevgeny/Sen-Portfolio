@@ -16,6 +16,7 @@ class Contacts extends React.Component {
             }, (error) => {
                 console.log(error.text);
             });
+
         e.target.reset();
     }
 
@@ -24,7 +25,7 @@ class Contacts extends React.Component {
         const { contactFromProps, } = this.props;
 
         return (
-            <section className='contact' id='contacts'>
+            <section className='contact' id='contacts' data-aos="zoom-in-down" data-aos-duration="1000">
                 <div className='container'>
                     <h2 className='title'>Contact me</h2>
                     <div className='contact-content'>

@@ -15,8 +15,6 @@ const Footer = lazy(() => import('./components/footer/footer.component'));
 const ScrollBtn = lazy(() => import('./components/scroll-up-btn/scroll-up-btn'));
 
 
-
-
 const App = () => (
   <div>
     <Suspense fallback={<div style={{

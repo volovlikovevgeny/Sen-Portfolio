@@ -99,7 +99,13 @@
                 }
 
                 .node::before{
-                    width: 73%;
+                    width: 77%;
+                } 
+                .git::before{
+                    width: 93%;
+                }
+                .postgres::before{
+                    width: 70%;
                 }
             }
         }
