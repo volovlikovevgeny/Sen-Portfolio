@@ -40,11 +40,11 @@ class Projects extends React.Component {
                 {
                     id: 4,
                     dev: 'Frontend Developing',
-                    text: 'Frontend application made with HTML5 CSS3 Vanilla JS. On developing stage',
-                    url: 'https://volovlikovevgeny.github.io/RestShop/',
-                    img: 'https://i.ibb.co/zVxSqZ6/rest.png',
-                    code: 'https://github.com/volovlikovevgeny/RestShop',
-                    live: 'https://volovlikovevgeny.github.io/RestShop/'
+                    text: 'Frontend SPA web-site, In order to create I`ve used React framework, It`s fully reponsible and simple to use',
+                    url: 'https://mavicpro.netlify.app/',
+                    img: 'https://i.ibb.co/z4kS3vd/Mavic.png',
+                    code: 'https://github.com/volovlikovevgeny/Mavic-Pro',
+                    live: 'https://mavicpro.netlify.app/'
                 },
             ]
         }
