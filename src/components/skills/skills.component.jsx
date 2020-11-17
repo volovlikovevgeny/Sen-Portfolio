@@ -62,7 +62,7 @@ class Skills extends React.Component {
 
     render() {
         return (
-            <section data-aos="zoom-in" data-aos-duration="1000" className='skills' id='skills'>
+            <section className='skills' id='skills'>
                 <div className='container'>
                     <h2 className='title'>My Skills</h2>
                     <div className='skills-content'>

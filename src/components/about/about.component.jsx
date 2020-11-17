@@ -1,11 +1,11 @@
 import React from 'react';
 import './about.styles.scss';
 
-import pdf from '../../assets/Volovlikov Evgeny.pdf';
+import pdf from '../../assets/Воловликов Евгений Витальевич.pdf';
 
 export default function About() {
     return (
-        <section className='about' id='about' data-aos="zoom-in-up" data-aos-duration="1000">
+        <section className='about' id='about'>
             <div className='container'>
                 <h2 className='title'>About me</h2>
                 <div className='about-content'>

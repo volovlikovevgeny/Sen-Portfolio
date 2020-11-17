@@ -54,7 +54,7 @@ class Projects extends React.Component {
         return (
 
 
-            <section data-aos="zoom-in" data-aos-duration="1000" className='projects' id='projects'>
+            <section className='projects' id='projects'>
                 <div className='container'>
                     <h2 className='title'>Projects</h2>
                     <div className='serv-content'>
