@@ -1,59 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { navLinkAction } from '../../redux/navigation/nav.action';
+
 import './navigation.styles.scss';
 
 import { Link } from 'react-scroll';
 
 class Navigation extends React.Component {
-
-    constructor() {
-        super()
-
-        this.state = {
-            isHidden: true,
-            navLinks: [
-                {
-                    id: 1,
-                    link: 'home',
-                    name: 'Home'
-                },
-                {
-                    id: 2,
-                    link: 'about',
-                    name: 'About'
-                },
-                {
-                    id: 3,
-                    link: 'projects',
-                    name: 'Projects'
-                },
-                {
-                    id: 4,
-                    link: 'skills',
-                    name: 'Skills'
-                },
-                {
-                    id: 5,
-                    link: 'contact',
-                    name: 'Contact'
-                },
-            ]
-        }
-    }
-
-    toggleClick = () => {
-        this.setState({
-            isHidden: !this.state.isHidden
-        })
-    }
-
-    closeClick = () => {
-        this.setState({
-            isHidden: !this.state.isHidden
-        })
-    }
-
     render() {
-        const { isHidden } = this.state;
+        const { navLinks, isHiddenBtn, toggleCartHidden, } = this.props;
+
         return (
             <nav className='navbar'>
                 <div className='navbar-items container'>
@@ -62,8 +18,8 @@ class Navigation extends React.Component {
                         smooth={true}
                         offset={70}
                         duration={700}>Portfo<span>lio</span></Link></div>
-                    <ul className='menu' style={isHidden ? null : { left: '0' }}>
-                        {this.state.navLinks.map(item => (
+                    <ul className='menu' style={isHiddenBtn ? null : { left: '0' }}>
+                        {navLinks.map(item => (
                             <li key={item.id}>
                                 <Link
                                     activeClass='active'
@@ -72,16 +28,15 @@ class Navigation extends React.Component {
                                     smooth={true}
                                     offset={70}
                                     duration={700}
-                                    onClick={this.closeClick}>{item.name}
+                                    onClick={() => toggleCartHidden()}>{item.name}
                                 </Link>
                             </li>
                         ))}
                     </ul>
-                    <div className='menu-btn' onClick={this.toggleClick} >
+                    <div className='menu-btn' onClick={() => toggleCartHidden().isHidden} >
                         {
-                            isHidden
-                                ?
-                                < i className='fa fa-bars'></i>
+                            isHiddenBtn
+                                ? < i className='fa fa-bars'></i>
                                 : <i className="fas fa-times"></i>
                         }
                     </div>
@@ -91,5 +46,20 @@ class Navigation extends React.Component {
     }
 }
 
+const mapStateToProps = state => {
+    console.log('Navigation:I am being called');
+    return (
+        {
+            navLinks: state.navLinks.navLinks,
+            isHiddenBtn: state.navLinks.isHidden,
+        }
+    )
+}
 
-export default Navigation;
+const mapDispatchToProps = dispatch => (
+    {
+        toggleCartHidden: () => dispatch(navLinkAction())
+    }
+)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

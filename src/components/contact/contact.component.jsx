@@ -21,8 +21,7 @@ class Contacts extends React.Component {
     }
 
     render() {
-
-        const { contactFromProps, } = this.props;
+        const { contactFromProps } = this.props;
 
         return (
             <section className='contact' id='contacts' data-aos="zoom-in-down" data-aos-duration="1000">
@@ -77,8 +76,15 @@ class Contacts extends React.Component {
 }
 
 
-const mapStateToProps = (state) => ({
-    contactFromProps: state.contact.contacts
-})
+const mapStateToProps = (state) => {
+    console.log('Contact: I am being called');
+    return (
+        {
+            contactFromProps: state.contact.contacts
+        }
+    )
+}
+
+
 
 export default connect(mapStateToProps,)(Contacts);

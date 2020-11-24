@@ -3,7 +3,6 @@ import React from 'react';
 import './home.styles.scss';
 
 const Home = () => (
-
     <div
         data-aos="fade-down"
         data-aos-offset="200"

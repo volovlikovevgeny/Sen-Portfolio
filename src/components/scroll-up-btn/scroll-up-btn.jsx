@@ -3,10 +3,6 @@ import './scroll-up-styles.scss';
 import { Link } from 'react-scroll';
 
 export default function ScrollBtn() {
-
-
-
-
     return (
         <Link
             className='scroll-up-btn'
