@@ -16,7 +16,12 @@ const INITIAL_STATE = {
             id: 3,
             head: 'Mail',
             subTitle: 'Volovlikov97@gmail.com',
-        }
+        },
+        {
+            id: 4,
+            head: 'Phone',
+            subTitle: '8-977-285-04-61',
+        },
     ]
 }
 

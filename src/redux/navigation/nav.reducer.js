@@ -26,6 +26,7 @@ const INITIAL_STATE = {
         link: 'contact',
         name: 'Contact'
     }],
+
     isHidden: true
 }
 

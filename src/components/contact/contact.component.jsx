@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import { selectContactItems } from '../../redux/contact/cart.selectors';
 
 import { connect } from 'react-redux';
 
@@ -80,7 +81,7 @@ const mapStateToProps = (state) => {
     console.log('Contact: I am being called');
     return (
         {
-            contactFromProps: state.contact.contacts
+            contactFromProps: selectContactItems(state)
         }
     )
 }

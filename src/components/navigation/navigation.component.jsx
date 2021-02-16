@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { navLinkAction } from '../../redux/navigation/nav.action';
+import { selectNavLinksItems } from '../../redux/navigation/navigation.selectors';
+
 
 import './navigation.styles.scss';
 
@@ -33,7 +35,7 @@ class Navigation extends React.Component {
                             </li>
                         ))}
                     </ul>
-                    <div className='menu-btn' onClick={() => toggleCartHidden().isHidden} >
+                    <div className='menu-btn' onClick={() => toggleCartHidden()} >
                         {
                             isHiddenBtn
                                 ? < i className='fa fa-bars'></i>
@@ -50,7 +52,7 @@ const mapStateToProps = state => {
     console.log('Navigation:I am being called');
     return (
         {
-            navLinks: state.navLinks.navLinks,
+            navLinks: selectNavLinksItems(state),
             isHiddenBtn: state.navLinks.isHidden,
         }
     )

@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { selectSkillItem } from '../../redux/skills/skills.selectors';
 import './skills.styles.scss';
+
 
 const Skills = ({ mySkills }) => {
     return (
@@ -35,7 +37,7 @@ const Skills = ({ mySkills }) => {
 const mapStateToProps = state => {
     console.log('Skills:I am being called');
     return {
-        mySkills: state.skills.skills
+        mySkills: selectSkillItem(state)
     }
 }
 

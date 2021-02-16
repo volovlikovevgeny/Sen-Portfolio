@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { selectProjectItems } from '../../redux/projects/project.selectors';
 import './projects.styles.scss';
 
 const Projects = ({ projects }) => {
@@ -36,7 +37,7 @@ const mapStateToProps = state => {
     console.log('Project:Iam being called');
     return (
         {
-            projects: state.projects.projects
+            projects: selectProjectItems(state)
         }
     )
 }
